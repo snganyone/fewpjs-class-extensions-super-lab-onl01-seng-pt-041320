@@ -10,5 +10,13 @@ class Tree{
     }
 }
 
-let tree = new Tree('apple');
-console.log(tree.species);
+class Deciduous extends Tree{
+    constructor(species, name){
+        super(species);
+        this.name = name;
+    }
+
+    static definition(){
+        return 'A tree is a perennial plant with an elongated stem, or trunk, supporting branches and leaves.' + ' Deciduous trees shed their leaves annually.'; 
+    }
+}
